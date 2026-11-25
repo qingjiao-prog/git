@@ -1,33 +1,54 @@
-# 操作系统
+# ---- 操作系统 ----
 Thumbs.db
 ehthumbs.db
 Desktop.ini
 $RECYCLE.BIN/
 .DS_Store
 
-# 编辑器
+# ---- 编辑器 / IDE ----
 .vscode/
 .idea/
 *.swp
+*.swo
 *~
 
-# 日志与临时文件
+# ---- 日志与临时文件 ----
 *.log
 *.tmp
+*.bak
+*.orig
 ~$*
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
-# Python
+# ---- 敏感信息（绝不提交）----
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+.netrc
+.gitconfig
+.git-credentials
+id_rsa
+id_ed25519
+
+# ---- Python ----
 __pycache__/
 *.py[cod]
 .venv/
 venv/
+*.egg-info/
 
-# Node
+# ---- Node ----
 node_modules/
-npm-debug.log*
-.env
+.pnpm-store/
 
-# 构建产物
+# ---- 构建产物 / 缓存 ----
 dist/
 build/
+out/
 .cache/
